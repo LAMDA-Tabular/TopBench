@@ -1,0 +1,15 @@
+models:
+  deepseek:
+    provider: openai_compatible
+    model_id: deepseek-chat
+    api_key_env: DEEPSEEK_API_KEY
+    base_url_env: DEEPSEEK_BASE_URL
+  gpt:
+    provider: openai
+    model_id: gpt-5.2
+    api_key_env: OPENAI_API_KEY
+  qwen:
+    provider: openai_compatible
+    model_id: qwen3-235b-a22b-instruct-2507
+    api_key_env: QWEN_API_KEY
+    base_url_env: QWEN_BASE_URL

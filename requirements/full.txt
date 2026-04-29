@@ -1,0 +1,5 @@
+-r core.txt
+xgboost>=2.0
+lightgbm>=4.0
+catboost>=1.2
+tabpfn

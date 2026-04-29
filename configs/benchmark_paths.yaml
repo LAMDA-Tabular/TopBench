@@ -1,0 +1,9 @@
+data_root: data
+output_root: outputs
+sandbox_image: topbench-sandbox:latest
+
+tasks:
+  single_point_prediction: data/single_point_prediction
+  decision_making: data/decision_making
+  treatment_effect_analysis: data/treatment_effect_analysis
+  ranking_and_filtering: data/ranking_and_filtering

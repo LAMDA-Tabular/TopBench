@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topbench"
+version = "0.1.0"
+description = "TopBench: implicit predictive reasoning over tabular question answering."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "LAMDA Tabular"}
+]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "tqdm>=4.66",
+  "pyyaml>=6.0",
+  "scikit-learn>=1.3",
+  "openai>=1.0",
+  "tiktoken>=0.5",
+]
+
+[project.optional-dependencies]
+full = [
+  "xgboost>=2.0",
+  "lightgbm>=4.0",
+  "catboost>=1.2",
+  "tabpfn",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
