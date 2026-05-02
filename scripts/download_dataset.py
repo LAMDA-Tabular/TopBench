@@ -6,8 +6,8 @@ import sys
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Download TopBench data from HuggingFace after release.")
-    parser.add_argument("--repo-id", required=True, help="HuggingFace dataset repo id, e.g. LAMDA-Tabular/TopBench")
+    parser = argparse.ArgumentParser(description="Download TopBench data from Hugging Face.")
+    parser.add_argument("--repo-id", default="LAMDA-Tabular/TopBench", help="Hugging Face dataset repo id")
     parser.add_argument("--local-dir", default="data")
     return parser.parse_args()
 

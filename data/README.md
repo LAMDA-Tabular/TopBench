@@ -2,7 +2,7 @@
 
 The full TopBench dataset is not stored in this GitHub repository.
 
-After the dataset is released on HuggingFace, place or symlink it here with this layout:
+Download it from [LAMDA-Tabular/TopBench](https://huggingface.co/datasets/LAMDA-Tabular/TopBench), then place or symlink it here with this layout:
 
 ```text
 data/

@@ -11,6 +11,8 @@ __pycache__/
 venv/
 outputs/
 outputs_tabagent_*/
+.tabagent_runtime/
+tabagent_score_reports/
 logs/
 catboost_info/
 *.log

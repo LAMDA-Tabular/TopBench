@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/LAMDA-Tabular/TopBench"><img src="https://img.shields.io/badge/Code-GitHub-black" alt="Code"></a>
   <img src="https://img.shields.io/badge/License-MIT-blue" alt="License">
-  <img src="https://img.shields.io/badge/Data-HuggingFace-yellow" alt="Data">
+  <a href="https://huggingface.co/datasets/LAMDA-Tabular/TopBench"><img src="https://img.shields.io/badge/Data-HuggingFace-yellow" alt="Data"></a>
   <img src="https://img.shields.io/badge/Python-3.10%2B-green" alt="Python">
 </p>
 
@@ -23,12 +23,12 @@
 
 Official repository for **TopBench**, a benchmark for evaluating whether language models can understand a natural-language predictive intent and solve the corresponding tabular prediction task.
 
-The full dataset will be released on HuggingFace. This repository contains the code needed for inference, evaluation, sandboxed tool use, and the predict-only machine-learning baseline.
+The full dataset is hosted on Hugging Face at [LAMDA-Tabular/TopBench](https://huggingface.co/datasets/LAMDA-Tabular/TopBench). This repository contains the code needed for inference, evaluation, sandboxed tool use, and the predict-only machine-learning baseline.
 
 ## News
 
 - **Initial Release**: We release the TopBench codebase, legacy-compatible reproduction scripts, Docker sandbox setup, and predict-only ensemble baseline.
-- **Dataset**: The benchmark data will be hosted separately on HuggingFace and should be placed under `data/`.
+- **Dataset**: The benchmark data is hosted on [Hugging Face](https://huggingface.co/datasets/LAMDA-Tabular/TopBench) and should be placed under `data/`.
 
 ## Overview
 
@@ -69,7 +69,13 @@ python -m pip install -r requirements/full.txt
 
 ### 2. Prepare Data
 
-After downloading the dataset, place or symlink it as:
+Download the dataset from Hugging Face:
+
+```bash
+python scripts/download_dataset.py --local-dir data
+```
+
+Alternatively, place or symlink it as:
 
 ```text
 data/
