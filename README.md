@@ -1,7 +1,7 @@
-# TopBench
+# TopBench: A Benchmark for Implicit Prediction and Reasoning over Tabular Question Answering
 
 <p align="center">
-  <b>TOPBENCH: Benchmarking Predictive Reasoning over Tables</b>
+  <b>TopBench: A Benchmark for Implicit Prediction and Reasoning over Tabular Question Answering</b>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 
 ---
 
-Official repository for **TopBench**, a benchmark for evaluating whether language models can understand a natural-language predictive intent and solve the corresponding tabular prediction task.
+Official repository for **TopBench: A Benchmark for Implicit Prediction and Reasoning over Tabular Question Answering**, a benchmark for evaluating whether language models can understand implicit predictive intent and solve the corresponding tabular question answering task.
 
 The full dataset is hosted on Hugging Face at [LAMDA-Tabular/TopBench](https://huggingface.co/datasets/LAMDA-Tabular/TopBench). This repository contains the code needed for inference, evaluation, sandboxed tool use, and the predict-only machine-learning baseline.
 
