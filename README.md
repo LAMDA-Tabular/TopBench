@@ -25,6 +25,10 @@ Official repository for **TopBench**, a benchmark for evaluating whether languag
 
 The full dataset is hosted on Hugging Face at [LAMDA-Tabular/TopBench](https://huggingface.co/datasets/LAMDA-Tabular/TopBench). This repository contains the code needed for inference, evaluation, sandboxed tool use, and the predict-only machine-learning baseline.
 
+<p align="center">
+  <img src="docs/assets/overview.png" alt="TopBench task overview" width="960">
+</p>
+
 ## News
 
 - **Initial Release**: We release the TopBench codebase, legacy-compatible reproduction scripts, Docker sandbox setup, and predict-only ensemble baseline.
