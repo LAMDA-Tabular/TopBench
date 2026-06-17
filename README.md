@@ -1,10 +1,7 @@
-# TopBench: A Benchmark for Implicit Prediction and Reasoning over Tabular Question Answering
+# 📈 TopBench: A Benchmark for Implicit Predictive Reasoning in Tabular Question Answering
 
 <p align="center">
-  <b>TopBench: A Benchmark for Implicit Prediction and Reasoning over Tabular Question Answering</b>
-</p>
-
-<p align="center">
+  <a href="https://arxiv.org/abs/2604.28076"><img src="https://img.shields.io/badge/arXiv-2604.28076-b31b1b.svg" alt="arXiv"></a>
   <a href="https://github.com/LAMDA-Tabular/TopBench"><img src="https://img.shields.io/badge/Code-GitHub-black" alt="Code"></a>
   <img src="https://img.shields.io/badge/License-MIT-blue" alt="License">
   <a href="https://huggingface.co/datasets/LAMDA-Tabular/TopBench"><img src="https://img.shields.io/badge/Data-HuggingFace-yellow" alt="Data"></a>
@@ -21,7 +18,7 @@
 
 ---
 
-Official repository for **TopBench: A Benchmark for Implicit Prediction and Reasoning over Tabular Question Answering**, a benchmark for evaluating whether language models can understand implicit predictive intent and solve the corresponding tabular question answering task.
+Official repository for **TopBench: A Benchmark for Implicit Predictive Reasoning in Tabular Question Answering**, a benchmark for evaluating whether language models can understand implicit predictive intent and solve the corresponding tabular question answering task.
 
 The full dataset is hosted on Hugging Face at [LAMDA-Tabular/TopBench](https://huggingface.co/datasets/LAMDA-Tabular/TopBench). This repository contains the code needed for inference, evaluation, sandboxed tool use, and the predict-only machine-learning baseline.
 
@@ -29,12 +26,12 @@ The full dataset is hosted on Hugging Face at [LAMDA-Tabular/TopBench](https://h
   <img src="docs/assets/overview.png" alt="TopBench task overview" width="960">
 </p>
 
-## News
+## 📰 News
 
 - **Initial Release**: We release the TopBench codebase, legacy-compatible reproduction scripts, Docker sandbox setup, and predict-only ensemble baseline.
 - **Dataset**: The benchmark data is hosted on [Hugging Face](https://huggingface.co/datasets/LAMDA-Tabular/TopBench) and should be placed under `data/`.
 
-## Overview
+## 🔎 Overview
 
 TopBench contains four task families:
 
@@ -54,9 +51,9 @@ B3 -> treatment_effect_analysis
 B4 -> ranking_and_filtering
 ```
 
-## Quick Start
+## 🚀 Quick Start
 
-### 1. Install
+### ⚙️ 1. Install
 
 ```bash
 conda create -n topbench python=3.10 -y
@@ -71,7 +68,7 @@ For the full predict-only ensemble baseline:
 python -m pip install -r requirements/full.txt
 ```
 
-### 2. Prepare Data
+### 📦 2. Prepare Data
 
 Download the dataset from Hugging Face:
 
@@ -95,7 +92,7 @@ Check the dataset layout:
 python scripts/validate_dataset.py --data-root data
 ```
 
-### 3. Configure API Keys
+### 🔑 3. Configure API Keys
 
 ```bash
 export DEEPSEEK_API_KEY=your_key_here
@@ -103,7 +100,7 @@ export DEEPSEEK_API_KEY=your_key_here
 
 Other OpenAI-compatible providers can be configured through `.env.example`.
 
-## Inference
+## 🤖 Inference
 
 Run a small DeepSeek smoke test over all tasks and both modes:
 
@@ -126,7 +123,7 @@ outputs/<model>/<legacy_mode>/<legacy_task>/
 
 where `text_reasoning` maps to `no_tool` and `agentic_workflow` maps to `with_tool`.
 
-## Sandbox
+## 🧰 Sandbox
 
 The agentic workflow executes model-generated Python code in Docker.
 
@@ -145,7 +142,7 @@ export TOPBENCH_SANDBOX_IMAGE=topbench-sandbox:latest
 
 Text-only inference and the predict-only baseline do not require Docker.
 
-## Evaluation
+## 📊 Evaluation
 
 Evaluate frozen outputs with the bundled compatibility evaluators:
 
@@ -188,7 +185,7 @@ python scripts/reproduce_structured_summary.py \
   --compare
 ```
 
-## Predict-Only Baseline
+## 🧪 Predict-Only Baseline
 
 The predict-only baseline uses gold structured data directly and does not use an LLM. It is an adaptive ensemble over strong tabular predictors such as HistGradientBoosting, ExtraTrees, XGBoost, LightGBM, CatBoost, and TabPFN when installed.
 
@@ -203,7 +200,7 @@ python scripts/run_predict_only_baseline.py \
   --fast-smoke
 ```
 
-## Repository Layout
+## 🗂️ Repository Layout
 
 ```text
 TopBench/
@@ -214,6 +211,18 @@ TopBench/
   requirements/          # dependency files
 ```
 
-## Citation
+## 📚 Citation
 
-Citation metadata will be added after publication.
+If you use TopBench in your research, please cite:
+
+```bibtex
+@misc{ji2026topbenchbenchmarkimplicitprediction,
+      title={TopBench: A Benchmark for Implicit Predictive Reasoning in Tabular Question Answering},
+      author={An-Yang Ji and Jun-Peng Jiang and De-Chuan Zhan and Han-Jia Ye},
+      year={2026},
+      eprint={2604.28076},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2604.28076},
+}
+```
