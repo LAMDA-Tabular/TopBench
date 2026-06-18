@@ -216,7 +216,7 @@ TopBench/
 If you use TopBench in your research, please cite:
 
 ```bibtex
-@misc{ji2026topbenchbenchmarkimplicitprediction,
+@misc{ji2026topbenchbenchmarkimplicitpredictive,
       title={TopBench: A Benchmark for Implicit Predictive Reasoning in Tabular Question Answering},
       author={An-Yang Ji and Jun-Peng Jiang and De-Chuan Zhan and Han-Jia Ye},
       year={2026},
